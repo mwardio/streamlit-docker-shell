@@ -10,7 +10,7 @@ git clone https://github.com/mwardio/streamlit-docker-shell.git
 cd streamlit-docker-shell/
 ```
 
-Update [*src/main.py*](https://github.com/mwardio/streamlit-docker-shell/blob/main/src/main.py) with your Streamlit app code and add dependencies to [*requirements.txt*](https://github.com/mwardio/streamlit-docker-shell/blob/main/requirements.txt) (optional), then build the Docker image:
+Update `src/main.py` with your Streamlit app code and add dependencies to `requirements.txt` (optional), then build the Docker image:
 ```bash
 docker build . -t streamlit-image
 ```
