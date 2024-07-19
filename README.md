@@ -20,7 +20,7 @@ Start the container via Docker Compose (recommended) using the included Compose 
 docker-compose up -d
 ```
 
-You can also run the Docker container directly, but be sure to mount the project directory inside the container as `/app` (assuming you didn't change the Dockerfile WORKDIR command):
+You can also run the Docker container directly, just be sure to mount the root project directory as a volume labeled `/app` (assuming you didn't change the Dockerfile WORKDIR command):
 ```bash
 docker run --name streamlit-app -p 8501:8501 -d -v ./:/app streamlit-image
 ```
