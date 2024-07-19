@@ -1,0 +1,9 @@
+services:
+  streamlit-app:
+    image: streamlit-image
+    container_name: streamlit-app
+    restart: unless-stopped
+    ports:
+      - 8501:8501
+    volumes:
+      - $(pwd):/app # On Windows replace with ${pwd}:/app
