@@ -1,6 +1,5 @@
 # streamlit-docker-shell  
-A bare bones project shell for deploying a Streamlit app via Docker, including server configuration (`.streamlit/config.toml`) to facilitate local development with live updates.  
-  
+A bare bones project shell for deploying a Streamlit app via Docker, configured with live reloading and other options to facilitate local development (see `.streamlit/config.toml`).  
 
 ## How to use:  
 
@@ -25,6 +24,3 @@ You can also run the Docker container directly, but be sure to mount the project
 ```bash
 docker run --name streamlit-app -p 8501:8501 -d -v ./:/app streamlit-image
 ```
-
-## Local development
-A number of server settings are specified in `.streamlit/config.toml` to facilitate local development with live updates. 
